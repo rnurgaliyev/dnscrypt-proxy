@@ -12,4 +12,4 @@ ADD dnscrypt-proxy.toml /opt/dnscrypt-proxy/dnscrypt-proxy.toml
 
 ENTRYPOINT ["/opt/dnscrypt-proxy/dnscrypt-proxy", "-config", "/opt/dnscrypt-proxy/dnscrypt-proxy.toml"]
 
-HEALTHCHECK --interval=10s CMD dig . @localhost || exit 1
+HEALTHCHECK --interval=300s CMD dig . @localhost > /dev/null || exit 1
