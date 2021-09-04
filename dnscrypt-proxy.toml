@@ -33,7 +33,7 @@ cache_neg_max_ttl = 600
 
 # System DNS and fallback DNS
 ignore_system_dns = true
-fallback_resolver = '1.1.1.1:53'
+bootstrap_resolvers = ['1.1.1.1:53']
 
 # Logging optimised for a container
 log_file = '/dev/stdout'
