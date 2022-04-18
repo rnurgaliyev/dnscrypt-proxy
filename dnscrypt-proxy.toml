@@ -25,11 +25,11 @@ require_nofilter = true
 
 # Cache configuration
 cache = true
-cache_size = 512
-cache_min_ttl = 600
+cache_size = 4096
+cache_min_ttl = 0
 cache_max_ttl = 86400
-cache_neg_min_ttl = 60
-cache_neg_max_ttl = 600
+cache_neg_min_ttl = 0
+cache_neg_max_ttl = 60
 
 # System DNS and fallback DNS
 ignore_system_dns = true
