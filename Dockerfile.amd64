@@ -1,8 +1,8 @@
-FROM amd64/alpine:latest
+FROM alpine:latest
 
 RUN apk add --no-cache curl bind-tools
 
-RUN curl --silent -L https://github.com/DNSCrypt/dnscrypt-proxy/releases/download/2.1.5/dnscrypt-proxy-linux_x86_64-2.1.5.tar.gz > /tmp/dnscrypt-proxy.tar.gz && \
+RUN curl --silent -L https://github.com/DNSCrypt/dnscrypt-proxy/releases/download/2.1.12/dnscrypt-proxy-linux_x86_64-2.1.12.tar.gz > /tmp/dnscrypt-proxy.tar.gz && \
     mkdir /opt/dnscrypt-proxy && \
     cd /opt/dnscrypt-proxy && \
     tar xvzf /tmp/dnscrypt-proxy.tar.gz --strip-components 1 && \
